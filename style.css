@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+.main-container {
+    background: url('./hero-bcg.jpeg') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5em 1.5em;
+    margin-top: 0;
+}
+
+.nav-bar.fixed-nav {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-logo img {
+    height: 6em;
+    width: 6em;
+}
+
+.nav-toggle {
+    padding: 0.5em;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    border: solid 2px black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.nav-toggle:hover {
+    background-color: teal;
+}
+
+.fa-solid.fa-bars {
+    height: 1em;
+    width: 1em;
+}
+
+.nav-links-container {
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
+}
+
+.nav-links-container.hide {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.nav-links li{
+    margin: 0.25em 0.25em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.scroll-link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li:hover {
+    transform: scale(1.25);
+}
+
+/* Home Card */
+
+.home-button-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    height: 12em;
+    width: 25em;
+    margin: 10em auto 0;
+}
+
+.home-button-title {
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+}
+
+.home-button-text {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.home-button {
+    background-color: transparent;
+    border-color: white;
+    border-width: 0.025em;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease;
+}
+
+.home-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-button:hover {
+    transform: scale(1.1)
+}
+
+/* Sections */
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1.5em;
+    color: teal;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Footer */
+
+footer {
+    height: 12vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+
+/* Top Arrow */
+
+
